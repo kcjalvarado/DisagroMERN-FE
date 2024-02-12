@@ -1,0 +1,146 @@
+/* Page.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0; /* Remove default margin to ensure footer spans the full width */
+}
+
+/* Header styles */
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed; /* Position the header at the top */
+  top: 0; /* Stick the header to the top of the viewport */
+  width: 100%; /* Ensure the header spans the full width */
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 0;
+  text-align: center;
+  position: fixed; /* Position the footer at the bottom */
+  bottom: 0; /* Stick the footer to the bottom of the viewport */
+  width: 100%; /* Ensure the footer spans the full width */
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Page container */
+.page-container {
+  padding-top: 13%; /* Add padding to account for the header */
+  padding-bottom: 120px; /* Add padding to account for the footer */
+  display: flex;
+  justify-content: space-evenly; /* Ensure sections are positioned at the ends */
+}
+/* Inner container for content */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40%; /* Add left padding */
+  padding-right: 20px; /* Add right padding */
+}
+
+/* Left section */
+.left-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Right section */
+.right-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Search input */
+.right-section input[type="text"] {
+  margin-bottom: 20px;
+}
+
+/* Items list styles */
+.items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.items-list li {
+  margin-bottom: 10px;
+}
+
+.items-list label {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/* Checkbox styles */
+.items-list input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+
+/* Submit button styles */
+.submit-button {
+  padding: 30px 60px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  position: fixed; /* Position the button at the bottom */
+  bottom: 15%; /* Set the distance from the bottom */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Adjust the horizontal position */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
