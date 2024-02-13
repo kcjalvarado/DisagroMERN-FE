@@ -10,13 +10,19 @@
 /* Body styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f2e9e9;
   margin: 0; /* Remove default margin to ensure footer spans the full width */
+}
+
+.banner {
+  background-color: #013220; /* Change header color to green */
+  text-align: left; /* Align text to the left */
+  padding-left: 30px;
 }
 
 /* Header styles */
 .header {
-  background-color: #007bff;
+  background-color: #013220;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -31,7 +37,7 @@ body {
 
 /* Footer styles */
 .footer {
-  background-color: #007bff;
+  background-color: #013220;
   color: #fff;
   padding: 12px 0;
   text-align: center;
@@ -64,8 +70,8 @@ body {
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.1);
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,8 +82,8 @@ body {
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.1);
+  width: 35%;
 }
 
 /* Form group styles */
@@ -103,7 +109,10 @@ body {
 
 /* Search input */
 .right-section input[type="text"] {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  width: 99%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 /* Items list styles */
@@ -121,6 +130,33 @@ body {
   font-size: 16px;
 }
 
+.combo-box-container {
+  height: 300px; /* Set a fixed height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Add border for visual clarity */
+  border-radius: 10px; /* Add round borders */
+  padding-right: 10px; /* Add padding to accommodate scrollbar */
+  align-items: start;
+}
+
+.combo-box-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.combo-box-container::-webkit-scrollbar-track {
+  background-color: transparent; /* Color of the scrollbar track */
+}
+
+.combo-box-container::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Add round borders to the scrollbar thumb */
+}
+
+.combo-box-container::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc; /* Color of the scrollbar thumb on hover */
+}
+
+
 /* Checkbox styles */
 .items-list input[type="checkbox"] {
   margin-right: 10px;
@@ -129,18 +165,47 @@ body {
 
 /* Submit button styles */
 .submit-button {
-  padding: 30px 60px;
-  background-color: #007bff;
+  padding: 15px 90px;
+  background-color: #013220;
   color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 25px;
   cursor: pointer;
   position: fixed; /* Position the button at the bottom */
-  bottom: 15%; /* Set the distance from the bottom */
-  left: 50%; /* Center the button horizontally */
+  bottom: 11%; /* Set the distance from the bottom */
+  left: 70%; /* Center the button horizontally */
   transform: translateX(-50%); /* Adjust the horizontal position */
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #0d9b67;
+}
+
+.percentage-boxes-container {
+  display: flex;
+}
+
+.percentage-box {
+  flex: 1;
+  text-align: center;
+  border: 1px solid gray; /* Change border color to gray */
+  border-radius: 10px; /* Add round border */
+  background-color: #2e2b2b; /* Add gray background color */
+  color: #fff;
+  margin-right: 10px; /* Add margin between boxes */
+  padding: 10px; /* Add padding */
+}
+
+
+.percentage-box:last-child {
+  margin-right: 0; /* Remove margin from the last box */
+}
+
+.logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between logo and text */
+  background-image: url('disalog.png');
+  background-size: contain; /* Ensure the image fits within the dimensions */
+  background-repeat: no-repeat; /* Prevent repeating the image */
 }

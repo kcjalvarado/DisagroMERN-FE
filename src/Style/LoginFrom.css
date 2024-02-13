@@ -10,6 +10,16 @@
   background-size: cover;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #013220; 
+}
+
+.header i {
+  margin-right: 10px;
+}
+
 .banner {
   text-align: center;
   background-color: #007bff;
